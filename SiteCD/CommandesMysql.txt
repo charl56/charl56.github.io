@@ -1,25 +1,16 @@
 Create database cd;
 
-Create table cd;
-
-insert into cd(Artiste, Album, NbTitre)
-    values("Freeze Corleone", "La Menace Fantome", 17);
-    values("Zamdane", "Couleur de ma peine", 18);
-    values("
-
-
-create table tracklistCouleur de ma peine(
-	Id INT NOT NULL PRIMARY KEY,
-	Titre VARCHAR(20),
-	Duree DECIMAL(3,2)
+Create table cd(
+	Artiste VARCHAR(20),
+	Album VARCHAR(30),
+	NbTitre INT NOT NULL,
+	IdUnique INT NOT NULL AUTO_INCREMENT
 );
-	
-insert into tracklist1(Id, Titre, Duree) values
-	(1,"Tout ce qu'il voulait",3.32),
-	(2,"Le monde par ma fenetre",3.21);
-
 
 create table users(
 	user VARCHAR(30) NOT NULL,
 	password VARCHAR(60)
 );
+
+
+Ajouter les cd directement depuis le site pour créer leur traklist
